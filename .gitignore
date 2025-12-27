@@ -1,4 +1,13 @@
 # Directories
+/build-*/
+/cmake-build-*/
+/out/
+*.o
+*.a
+*.so
+*.exe
+
+
 .vs/
 Binaries/
 .cache/
