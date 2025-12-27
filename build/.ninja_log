@@ -1,0 +1,7 @@
+# ninja log v7
+1	316	1766867140548213620	Library-App/CMakeFiles/LibraryApp.dir/Source/App.cpp.o	b0bf8927abbb3dd0
+1	263	1766866722834351626	Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Core.cpp.o	4a2b3db778f87617
+434	456	1766867140979844248	Library-Core/libLibraryCore.a	8f613528dd3b1c67
+456	489	1766867141001843494	Library-App/LibraryApp	4478c3c89d57d7d0
+1	320	1766867140546859077	Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Person.cpp.o	611c2786560b4c6d
+1	434	1766867140548062535	Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Library.cpp.o	24536b1769b60f63

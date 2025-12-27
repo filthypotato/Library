@@ -1,0 +1,8 @@
+/home/filthopotato/Documents/Projects/cpp/Library/build/CMakeFiles/edit_cache.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/CMakeFiles/rebuild_cache.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core/CMakeFiles/LibraryCore.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core/CMakeFiles/edit_cache.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core/CMakeFiles/rebuild_cache.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-App/CMakeFiles/LibraryApp.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-App/CMakeFiles/edit_cache.dir
+/home/filthopotato/Documents/Projects/cpp/Library/build/Library-App/CMakeFiles/rebuild_cache.dir
