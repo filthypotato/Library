@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/cmake_install.cmake",
+		"/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core/cmake_install.cmake",
+		"/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
