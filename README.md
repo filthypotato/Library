@@ -1,28 +1,13 @@
-# MiniEDR
+# Library
 
-A minimal Endpoint Detection and Response (EDR) framework built with C++20, featuring a modular Core/App architecture for building security monitoring and detection tools.
+A Library Management System built with C++20, featuring a modular Core/App architecture for managing library members, book checkouts, and library operations.
 
 ## Project Structure
 
 The project follows a two-tier architecture:
 
-- **MiniEDR-Core**: Static library containing core functionality and shared code
-- **MiniEDR-App**: Executable application that links against the Core library
-
-```
-MiniEDR/
-├── MiniEDR-Core/          # Core library
-│   ├── Source/
-│   │   └── Core/
-│   └── CMakeLists.txt
-├── MiniEDR-App/           # Application executable
-│   ├── Source/
-│   └── CMakeLists.txt
-├── Scripts/               # Build and run scripts
-│   ├── build.sh
-│   └── run.sh
-└── CMakeLists.txt         # Root CMake configuration
-```
+- **Library-Core**: Static library containing core functionality (Person, Library classes)
+- **Library-App**: Executable application that links against the Core library
 
 ## Requirements
 
@@ -82,7 +67,7 @@ cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=g++
 cmake --build build -j
 
 # Run
-./build/MiniEDR-App/MiniEDRApp
+./build/Library-App/LibraryApp
 ```
 
 ## Development
@@ -103,28 +88,30 @@ The compile commands database is automatically symlinked to the project root for
 All build configurations are managed through CMake:
 
 - **Root CMakeLists.txt**: Project-wide settings, C++20 standard
-- **MiniEDR-Core/CMakeLists.txt**: Core library target and public headers
-- **MiniEDR-App/CMakeLists.txt**: Application target and linkage
+- **Library-Core/CMakeLists.txt**: Core library target and public headers
+- **Library-App/CMakeLists.txt**: Application target and linkage
 
 ### Adding New Files
 
 **To add files to Core:**
 
-Edit `MiniEDR-Core/CMakeLists.txt`:
+Edit `Library-Core/CMakeLists.txt`:
 
 ```cmake
-add_library(MiniEDRCore STATIC
+add_library(LibraryCore STATIC
     Source/Core/Core.cpp
+    Source/Core/Person.cpp
+    Source/Core/Library.cpp
     Source/Core/NewFile.cpp  # Add your new file
 )
 ```
 
 **To add files to App:**
 
-Edit `MiniEDR-App/CMakeLists.txt`:
+Edit `Library-App/CMakeLists.txt`:
 
 ```cmake
-add_executable(MiniEDRApp
+add_executable(LibraryApp
     Source/App.cpp
     Source/NewApp.cpp  # Add your new file
 )
@@ -133,15 +120,6 @@ add_executable(MiniEDRApp
 ## Build Artifacts
 
 Build outputs are organized by configuration:
-
-```
-build/
-├── MiniEDR-Core/
-│   └── libMiniEDRCore.a     # Static library
-├── MiniEDR-App/
-│   └── MiniEDRApp           # Executable
-└── compile_commands.json    # For IDE/clangd support
-```
 
 ## Alternative Build Systems
 
@@ -187,7 +165,7 @@ Since debug symbols are enabled by default in Debug builds:
 
 ```bash
 ./Scripts/build.sh
-gdb ./build/MiniEDR-App/MiniEDRApp
+gdb ./build/Library-App/LibraryApp
 ```
 
 ## Contributing
@@ -249,17 +227,25 @@ sudo apt install g++
 sudo apt install clang
 ```
 
+## Features
+
+The Library Management System currently supports:
+
+- **Member Management**: Users can become library members
+- **Book Checkout**: Members can check out multiple books
+- **Checkout Tracking**: View currently checked out books
+- **Interactive Menu**: Simple command-line interface for library operations
+
 ## Future Development
 
-This template provides a foundation for building EDR capabilities. Potential extensions include:
+Potential extensions to the library system include:
 
-- System call monitoring
-- Process tracking
-- Network connection monitoring
-- File integrity monitoring
-- Event logging and alerting
-- Rule-based detection engine
+- Book return functionality
+- Due date tracking
+- Book inventory management
+- Member database persistence
+- Search functionality for books
+- Late fee calculation
+- Multiple library branches support
+- Book reservation system
 
----
-
-Built with ❤️ using modern C++20
