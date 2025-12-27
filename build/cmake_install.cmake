@@ -1,4 +1,4 @@
-# Install script for directory: /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua
+# Install script for directory: /home/filthopotato/Documents/Projects/cpp/Library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,18 +44,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core/cmake_install.cmake")
+  include("/home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App/cmake_install.cmake")
+  include("/home/filthopotato/Documents/Projects/cpp/Library/build/Library-App/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/install_local_manifest.txt"
+  file(WRITE "/home/filthopotato/Documents/Projects/cpp/Library/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -71,6 +71,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/filthopotato/Documents/Projects/cpp/Library/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

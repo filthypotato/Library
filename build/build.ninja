@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MiniEDR
+# Project: Library
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/
+cmake_ninja_workdir = /home/filthopotato/Documents/Projects/cpp/Library/build/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -66,151 +66,163 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/CMakeLists.txt
+# /home/filthopotato/Documents/Projects/cpp/Library/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target MiniEDRCore
+# Object build statements for STATIC_LIBRARY target LibraryCore
 
 
 #############################################
-# Order-only phony target for MiniEDRCore
+# Order-only phony target for LibraryCore
 
-build cmake_object_order_depends_target_MiniEDRCore: phony || .
+build cmake_object_order_depends_target_LibraryCore: phony || .
 
-build MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/Source/Core/Core.cpp.o: CXX_COMPILER__MiniEDRCore_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-Core/Source/Core/Core.cpp || cmake_object_order_depends_target_MiniEDRCore
+build Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Core.cpp.o: CXX_COMPILER__LibraryCore_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source/Core/Core.cpp || cmake_object_order_depends_target_LibraryCore
   CONFIG = Debug
-  DEP_FILE = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/Source/Core/Core.cpp.o.d
+  DEP_FILE = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Core.cpp.o.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-Core/Source
-  OBJECT_DIR = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir
-  OBJECT_FILE_DIR = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/Source/Core
-  TARGET_COMPILE_PDB = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/MiniEDRCore.pdb
-  TARGET_PDB = MiniEDR-Core/libMiniEDRCore.pdb
-  TARGET_SUPPORT_DIR = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir
+  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source
+  OBJECT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
+  OBJECT_FILE_DIR = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core
+  TARGET_SUPPORT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
+
+build Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Person.cpp.o: CXX_COMPILER__LibraryCore_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source/Core/Person.cpp || cmake_object_order_depends_target_LibraryCore
+  CONFIG = Debug
+  DEP_FILE = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Person.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source
+  OBJECT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
+  OBJECT_FILE_DIR = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core
+  TARGET_SUPPORT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
+
+build Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Library.cpp.o: CXX_COMPILER__LibraryCore_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source/Core/Library.cpp || cmake_object_order_depends_target_LibraryCore
+  CONFIG = Debug
+  DEP_FILE = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Library.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source
+  OBJECT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
+  OBJECT_FILE_DIR = Library-Core/CMakeFiles/LibraryCore.dir/Source/Core
+  TARGET_SUPPORT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target MiniEDRCore
+# Link build statements for STATIC_LIBRARY target LibraryCore
 
 
 #############################################
-# Link the static library MiniEDR-Core/libMiniEDRCore.a
+# Link the static library Library-Core/libLibraryCore.a
 
-build MiniEDR-Core/libMiniEDRCore.a: CXX_STATIC_LIBRARY_LINKER__MiniEDRCore_Debug MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/Source/Core/Core.cpp.o
+build Library-Core/libLibraryCore.a: CXX_STATIC_LIBRARY_LINKER__LibraryCore_Debug Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Core.cpp.o Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Person.cpp.o Library-Core/CMakeFiles/LibraryCore.dir/Source/Core/Library.cpp.o
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir
+  OBJECT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir/MiniEDRCore.pdb
-  TARGET_FILE = MiniEDR-Core/libMiniEDRCore.a
-  TARGET_PDB = MiniEDR-Core/libMiniEDRCore.pdb
-  TARGET_SUPPORT_DIR = MiniEDR-Core/CMakeFiles/MiniEDRCore.dir
+  TARGET_FILE = Library-Core/libLibraryCore.a
+  TARGET_PDB = LibraryCore.a.dbg
+  TARGET_SUPPORT_DIR = Library-Core/CMakeFiles/LibraryCore.dir
 
 
 #############################################
 # Utility command for edit_cache
 
-build MiniEDR-Core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+build Library-Core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build MiniEDR-Core/edit_cache: phony MiniEDR-Core/CMakeFiles/edit_cache.util
+build Library-Core/edit_cache: phony Library-Core/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build MiniEDR-Core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+build Library-Core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build MiniEDR-Core/rebuild_cache: phony MiniEDR-Core/CMakeFiles/rebuild_cache.util
+build Library-Core/rebuild_cache: phony Library-Core/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/CMakeLists.txt
+# /home/filthopotato/Documents/Projects/cpp/Library/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target MiniEDRApp
+# Object build statements for EXECUTABLE target LibraryApp
 
 
 #############################################
-# Order-only phony target for MiniEDRApp
+# Order-only phony target for LibraryApp
 
-build cmake_object_order_depends_target_MiniEDRApp: phony || cmake_object_order_depends_target_MiniEDRCore
+build cmake_object_order_depends_target_LibraryApp: phony || cmake_object_order_depends_target_LibraryCore
 
-build MiniEDR-App/CMakeFiles/MiniEDRApp.dir/Source/App.cpp.o: CXX_COMPILER__MiniEDRApp_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-App/Source/App.cpp || cmake_object_order_depends_target_MiniEDRApp
+build Library-App/CMakeFiles/LibraryApp.dir/Source/App.cpp.o: CXX_COMPILER__LibraryApp_unscanned_Debug /home/filthopotato/Documents/Projects/cpp/Library/Library-App/Source/App.cpp || cmake_object_order_depends_target_LibraryApp
   CONFIG = Debug
-  DEP_FILE = MiniEDR-App/CMakeFiles/MiniEDRApp.dir/Source/App.cpp.o.d
+  DEP_FILE = Library-App/CMakeFiles/LibraryApp.dir/Source/App.cpp.o.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-Core/Source
-  OBJECT_DIR = MiniEDR-App/CMakeFiles/MiniEDRApp.dir
-  OBJECT_FILE_DIR = MiniEDR-App/CMakeFiles/MiniEDRApp.dir/Source
-  TARGET_COMPILE_PDB = MiniEDR-App/CMakeFiles/MiniEDRApp.dir/
-  TARGET_PDB = MiniEDR-App/MiniEDRApp.pdb
-  TARGET_SUPPORT_DIR = MiniEDR-App/CMakeFiles/MiniEDRApp.dir
+  INCLUDES = -I/home/filthopotato/Documents/Projects/cpp/Library/Library-Core/Source
+  OBJECT_DIR = Library-App/CMakeFiles/LibraryApp.dir
+  OBJECT_FILE_DIR = Library-App/CMakeFiles/LibraryApp.dir/Source
+  TARGET_SUPPORT_DIR = Library-App/CMakeFiles/LibraryApp.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target MiniEDRApp
+# Link build statements for EXECUTABLE target LibraryApp
 
 
 #############################################
-# Link the executable MiniEDR-App/MiniEDRApp
+# Link the executable Library-App/LibraryApp
 
-build MiniEDR-App/MiniEDRApp: CXX_EXECUTABLE_LINKER__MiniEDRApp_Debug MiniEDR-App/CMakeFiles/MiniEDRApp.dir/Source/App.cpp.o | MiniEDR-Core/libMiniEDRCore.a || MiniEDR-Core/libMiniEDRCore.a
+build Library-App/LibraryApp: CXX_EXECUTABLE_LINKER__LibraryApp_Debug Library-App/CMakeFiles/LibraryApp.dir/Source/App.cpp.o | Library-Core/libLibraryCore.a || Library-Core/libLibraryCore.a
   CONFIG = Debug
-  DEP_FILE = MiniEDR-App/CMakeFiles/MiniEDRApp.dir/link.d
+  DEP_FILE = Library-App/CMakeFiles/LibraryApp.dir/link.d
   FLAGS = -g
-  LINK_FLAGS = -Wl,--dependency-file=MiniEDR-App/CMakeFiles/MiniEDRApp.dir/link.d
-  LINK_LIBRARIES = MiniEDR-Core/libMiniEDRCore.a
-  OBJECT_DIR = MiniEDR-App/CMakeFiles/MiniEDRApp.dir
+  LINK_FLAGS = -Wl,--dependency-file=Library-App/CMakeFiles/LibraryApp.dir/link.d
+  LINK_LIBRARIES = Library-Core/libLibraryCore.a
+  OBJECT_DIR = Library-App/CMakeFiles/LibraryApp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = MiniEDR-App/CMakeFiles/MiniEDRApp.dir/
-  TARGET_FILE = MiniEDR-App/MiniEDRApp
-  TARGET_PDB = MiniEDR-App/MiniEDRApp.pdb
-  TARGET_SUPPORT_DIR = MiniEDR-App/CMakeFiles/MiniEDRApp.dir
+  TARGET_FILE = Library-App/LibraryApp
+  TARGET_PDB = LibraryApp.dbg
+  TARGET_SUPPORT_DIR = Library-App/CMakeFiles/LibraryApp.dir
 
 
 #############################################
 # Utility command for edit_cache
 
-build MiniEDR-App/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+build Library-App/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build/Library-App && /usr/bin/ccmake -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build MiniEDR-App/edit_cache: phony MiniEDR-App/CMakeFiles/edit_cache.util
+build Library-App/edit_cache: phony Library-App/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build MiniEDR-App/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua -B/home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+build Library-App/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/filthopotato/Documents/Projects/cpp/Library/build/Library-App && /usr/bin/cmake --regenerate-during-build -S/home/filthopotato/Documents/Projects/cpp/Library -B/home/filthopotato/Documents/Projects/cpp/Library/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build MiniEDR-App/rebuild_cache: phony MiniEDR-App/CMakeFiles/rebuild_cache.util
+build Library-App/rebuild_cache: phony Library-App/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build MiniEDRApp: phony MiniEDR-App/MiniEDRApp
+build LibraryApp: phony Library-App/LibraryApp
 
-build MiniEDRCore: phony MiniEDR-Core/libMiniEDRCore.a
+build LibraryCore: phony Library-Core/libLibraryCore.a
 
-build libMiniEDRCore.a: phony MiniEDR-Core/libMiniEDRCore.a
+build libLibraryCore.a: phony Library-Core/libLibraryCore.a
 
 # =============================================================================
 # Folder targets.
@@ -218,23 +230,23 @@ build libMiniEDRCore.a: phony MiniEDR-Core/libMiniEDRCore.a
 # =============================================================================
 
 #############################################
-# Folder: /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build
+# Folder: /home/filthopotato/Documents/Projects/cpp/Library/build
 
-build all: phony MiniEDR-Core/all MiniEDR-App/all
-
-# =============================================================================
-
-#############################################
-# Folder: /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App
-
-build MiniEDR-App/all: phony MiniEDR-App/MiniEDRApp
+build all: phony Library-Core/all Library-App/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core
+# Folder: /home/filthopotato/Documents/Projects/cpp/Library/build/Library-App
 
-build MiniEDR-Core/all: phony MiniEDR-Core/libMiniEDRCore.a
+build Library-App/all: phony Library-App/LibraryApp
+
+# =============================================================================
+
+#############################################
+# Folder: /home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core
+
+build Library-Core/all: phony Library-Core/libLibraryCore.a
 
 # =============================================================================
 # Built-in targets
@@ -243,14 +255,14 @@ build MiniEDR-Core/all: phony MiniEDR-Core/libMiniEDRCore.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/cmake_install.cmake /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-Core/cmake_install.cmake /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/build/MiniEDR-App/cmake_install.cmake: RERUN_CMAKE | /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-App/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-Core/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake
+build build.ninja /home/filthopotato/Documents/Projects/cpp/Library/build/cmake_install.cmake /home/filthopotato/Documents/Projects/cpp/Library/build/Library-Core/cmake_install.cmake /home/filthopotato/Documents/Projects/cpp/Library/build/Library-App/cmake_install.cmake: RERUN_CMAKE | /home/filthopotato/Documents/Projects/cpp/Library/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/Library/Library-App/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/Library/Library-Core/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-App/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/ProjectTemplateCppLua/MiniEDR-Core/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake: phony
+build /home/filthopotato/Documents/Projects/cpp/Library/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/Library/Library-App/CMakeLists.txt /home/filthopotato/Documents/Projects/cpp/Library/Library-Core/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake: phony
 
 
 #############################################
